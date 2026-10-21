@@ -27,6 +27,11 @@ description: "指導 OrCAD Capture 與 Allegro PCB 的接腳盤點、配對規�
 - 提出配對、處理既有占用：讀 [配對與變更計畫](references/planning.md)。
 - 判讀 output、驗證連線或處理失敗：讀 [驗證與恢復](references/verification.md)。
 - 保存任務進度與交付檔案：讀 [專案紀錄與交付](references/project-data.md)。
+- 沿用舊板 placement、改 RefDes 或匯入 netlist：讀 [舊板沿用與修改紀錄](references/board-reuse.md)。
+
+## 問題發生時的引導順序
+
+先用一兩句說明整體目標與固定條件，再依序交代：問題在哪個環節、影響哪些設計／哪些仍成立、目前證據與未知項、可選方向及最小下一步。分辨資料缺少、版本矛盾、設計衝突與執行失敗，讓使用者知道下一份資料要回答什麼。一般續接只簡短定位；有架構變更才展開整體說明。
 
 ## 標準循環
 
