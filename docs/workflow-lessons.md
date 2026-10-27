@@ -90,3 +90,9 @@ Intra-pair gap and clearance to other nets are different rules. Even when displa
 資料庫可能同時以一般屬性與原生物件關聯表示設計資訊。單一屬性查詢沒有值，只能支持該查詢未讀到值；在判定關聯不存在前，應核對原生關聯及成員資料。若新證據推翻先前結論，應修正結論並保留尚未核對的成員與極性範圍。
 
 A database may expose design information through both ordinary properties and native object relationships. An empty property query establishes only that the query returned no value. Before concluding that a relationship is absent, inspect the native relationship and its members. When new evidence overturns an earlier conclusion, revise it while retaining any unverified membership and polarity scope.
+
+## 比較基準與例外條件 / Comparison baselines and exceptions
+
+零差異的結論取決於預期基準與比較條件。若驗證把操作後觀察到的結果寫回預期值，或排除失去網路歸屬的銅線、容許網路重新歸屬，結果應明列這些調整及其影響範圍；它不能單獨證明原有幾何與網路歸屬完整保留。例外需有獨立依據，並另行核對受影響的連通與修改授權。
+
+A zero-difference result depends on the expected baseline and comparison criteria. If verification replaces expected values with observed results after the operation, excludes copper that lost its net association, or permits net reassignment, state those adjustments and their scope. The result alone does not establish full preservation of the original geometry and net ownership. Exceptions require independent support, with affected connectivity and authorization checked separately.
