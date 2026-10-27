@@ -1,5 +1,7 @@
 # PCB System Architecture — Cadence Connectivity
 
+**繁體中文** | [English](README.en.md)
+
 **以可追溯的證據，逐步完成 schematic 與 PCB 接線協作。**
 
 [MIT 授權](LICENSE) · [安裝與使用](#快速開始) · [貢獻指南](CONTRIBUTING.md)
