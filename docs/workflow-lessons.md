@@ -102,3 +102,13 @@ A zero-difference result depends on the expected baseline and comparison criteri
 設計規則違規總數相同，仍可能包含不同違規；只用座標與規則名稱作索引，也可能把同位置同名稱的多筆違規合併。結果應說明比較鍵、重複項處理及檢查時點，並保留可區分違規的層、涉及物件與規則內容。交易內的差異比較不能自動延伸為提交後的完整驗證。
 
 Equal design rule violation totals can contain different violations. Indexing only by location and rule name can also merge multiple violations with the same key. State the comparison key, handling of duplicates and time of inspection, and retain distinguishing layer, involved objects and rule details. A comparison within a transaction does not automatically establish complete verification after commit.
+
+## 觀察結果與提交條件 / Observations and commit conditions
+
+報告記錄後置條件的值，與程式以該條件決定是否提交，是不同的證據。審查時應核對失敗條件是否真的阻止提交，並保留提交後的讀回；成功案例本身不能證明失敗分支已實測。
+
+Logging a postcondition and using it to decide whether to commit provide different evidence. Review whether a failed condition actually prevents commit, and retain readback after commit. A successful run alone does not establish that the failure branch was tested.
+
+非目標網路的未連接總數沒有增加，只支持該總數的結論；固定端點是否仍經銅線互通，需以指定端點另行核對。
+
+An unchanged unconnected total for a non-target net supports only that aggregate result. Preserved copper connectivity between fixed endpoints requires a separate check of those endpoints.
