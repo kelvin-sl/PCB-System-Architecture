@@ -1,4 +1,4 @@
 interface:
   display_name: "Cadence 接線協作"
-  short_description: "逐步讀取 Capture 與 Allegro，規劃接腳配對並核對執行結果"
-  default_prompt: "使用 $cadence-connectivity 接續目前專案，先核對最新報告，再產生下一步腳本。"
+  short_description: "協作 Capture 與 Allegro 接腳、實體放置及逐段佈線，核對執行與恢復證據"
+  default_prompt: "使用 $cadence-connectivity 接續目前設計，先說明階段與證據缺口，再完成已授權的下一步腳本及驗證。"

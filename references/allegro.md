@@ -25,4 +25,4 @@ API 名稱與欄位需依安裝版本驗證。未放置元件、未知值及空 
 
 只有相對位置圖時，提供有條件的方向性 proposal。要比較實際線長與交叉，需要當前板的端點位置、朝向與可用佈線條件。pad 間距不是已佈線長度，也不能證明 skew 符合要求。
 
-本流程的 PCB 步驟以讀取和分析為主。若要求修改 placement、pin assignment 或 routing，需要另訂具體變更計畫與驗證範圍。
+若要求修改 placement、pin assignment 或 routing，先確定具體變更計畫與驗證範圍，再沿用已授權流程；不因這是PCB任務就一律停在盤點。實體位置及邊界見 [placement](placement.md)，實際銅線見 [routing](routing.md)，本機／遠端交付見 [execution](execution.md)。
