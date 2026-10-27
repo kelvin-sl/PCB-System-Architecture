@@ -86,3 +86,7 @@ Verify differential pair existence and membership separately from signal names a
 
 對內間距與異網間距是不同的規則，即使顯示數值相同，也須保留各自的規則種類、適用範圍與單位。設定讀回只支持相應設定的狀態，佈線、連通、設計規則及電氣結果仍需各自驗證。
 Intra-pair gap and clearance to other nets are different rules. Even when displayed values match, retain each rule's type, scope and units. Configuration readback supports the corresponding configuration state; routing, connectivity, design rules and electrical results each require their own verification.
+
+資料庫可能同時以一般屬性與原生物件關聯表示設計資訊。單一屬性查詢沒有值，只能支持該查詢未讀到值；在判定關聯不存在前，應核對原生關聯及成員資料。若新證據推翻先前結論，應修正結論並保留尚未核對的成員與極性範圍。
+
+A database may expose design information through both ordinary properties and native object relationships. An empty property query establishes only that the query returned no value. Before concluding that a relationship is absent, inspect the native relationship and its members. When new evidence overturns an earlier conclusion, revise it while retaining any unverified membership and polarity scope.
