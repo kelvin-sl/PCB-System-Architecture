@@ -84,6 +84,8 @@ $cadence-connectivity
 - [舊板沿用](references/board-reuse.md)：重用設計的修改流程。
 - [專案紀錄](references/project-data.md)：私人資料、修改與交付紀錄。
 
+[通用驗證經驗（中英對照）](docs/workflow-lessons.md)：持續整理操作結果、幾何比對、錯誤證據與批次恢復的判讀方法。
+
 ## 相容性與驗證範圍
 
 閱讀與安裝本 skill 不需 Cadence runtime。執行產生的 Tcl／SKILL 時，需使用者具備相應軟體、授權、設計存取及可用的執行入口。

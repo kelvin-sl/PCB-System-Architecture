@@ -99,6 +99,8 @@ The following documents are currently in Traditional Chinese:
 - [Board reuse](references/board-reuse.md): workflows for modifying an existing design.
 - [Project records](references/project-data.md): private data, change records, and deliverables.
 
+[Workflow lessons (Chinese/English)](docs/workflow-lessons.md): general lessons on operation results, geometry comparisons, error evidence, and batch recovery.
+
 ## Compatibility and verification scope
 
 Reading or installing this skill does not require a Cadence runtime. Running generated Tcl or SKILL scripts requires the appropriate software, licenses, design access, and an available execution method.
