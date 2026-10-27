@@ -112,3 +112,13 @@ Logging a postcondition and using it to decide whether to commit provide differe
 非目標網路的未連接總數沒有增加，只支持該總數的結論；固定端點是否仍經銅線互通，需以指定端點另行核對。
 
 An unchanged unconnected total for a non-target net supports only that aggregate result. Preserved copper connectivity between fixed endpoints requires a separate check of those endpoints.
+
+## 採樣幾何與精確保留 / Sampled geometry and exact preservation
+
+將幾何轉成經過取整的離散點集合，可協助比較拆分或合併後的路徑；但取樣間隔、取整與集合去重都會縮減可辨識的資訊。若圓弧只以端點間的線性取樣表示，曲率資訊也未被保留。採樣比對通過，只支持該採樣模型內的相符，不能單獨證明曲線、重複幾何或既有蛇線完整保留。
+
+Converting geometry to a rounded set of sampled points can help compare paths after splitting or merging. Sampling intervals, rounding and set deduplication reduce the information that the comparison can distinguish. Representing an arc by linear samples between its endpoints also omits curvature. A passing comparison establishes agreement within that sampling model; it does not by itself establish complete preservation of curves, duplicate geometry or existing meanders.
+
+審查時應說明哪些幾何使用精確記錄、哪些使用近似採樣，並分別保留必要的曲線語意、重複次數及固定端點連通證據。近似比對與端點連通各自通過，仍不會自動補足對方未檢查的範圍。
+
+State which geometry uses exact records and which uses approximate samples, and retain the required curve semantics, multiplicity and fixed endpoint connectivity evidence separately. Passing approximate geometry and endpoint connectivity checks does not automatically cover what either check omits.
