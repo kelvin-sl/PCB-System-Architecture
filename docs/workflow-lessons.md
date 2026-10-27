@@ -96,3 +96,9 @@ A database may expose design information through both ordinary properties and na
 零差異的結論取決於預期基準與比較條件。若驗證把操作後觀察到的結果寫回預期值，或排除失去網路歸屬的銅線、容許網路重新歸屬，結果應明列這些調整及其影響範圍；它不能單獨證明原有幾何與網路歸屬完整保留。例外需有獨立依據，並另行核對受影響的連通與修改授權。
 
 A zero-difference result depends on the expected baseline and comparison criteria. If verification replaces expected values with observed results after the operation, excludes copper that lost its net association, or permits net reassignment, state those adjustments and their scope. The result alone does not establish full preservation of the original geometry and net ownership. Exceptions require independent support, with affected connectivity and authorization checked separately.
+
+## 設計規則差異的辨識範圍 / Scope of design rule comparisons
+
+設計規則違規總數相同，仍可能包含不同違規；只用座標與規則名稱作索引，也可能把同位置同名稱的多筆違規合併。結果應說明比較鍵、重複項處理及檢查時點，並保留可區分違規的層、涉及物件與規則內容。交易內的差異比較不能自動延伸為提交後的完整驗證。
+
+Equal design rule violation totals can contain different violations. Indexing only by location and rule name can also merge multiple violations with the same key. State the comparison key, handling of duplicates and time of inspection, and retain distinguishing layer, involved objects and rule details. A comparison within a transaction does not automatically establish complete verification after commit.
