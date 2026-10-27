@@ -75,3 +75,14 @@ Result summaries should distinguish passed, failed, and unverified items, keepin
 動態填銅可能使幾何與物件身份呈現不同結果。身份、網路、所屬關係、層與邊界角色通過核對時，仍應明列幾何是否相同，以及比較條件是否改變。將差異標為重新填銅是一項待支持的解釋，不能單靠相同網路或層就認定變更可接受；連通、設計規則與儲存仍須各自確認。
 
 Dynamic copper fill can produce different results for geometry and object identity. When identity, net, ownership, layer and boundary role checks pass, state separately whether geometry matches and whether comparison criteria changed. Labeling a difference as repouring is an explanation requiring support. Matching net or layer alone does not establish that a change is acceptable; connectivity, design rules and saved state each need their own confirmation.
+
+## 約束指派與驗證範圍 / Constraint assignment and verification scope
+
+指派既有共用約束集與修改該約束集的定義，是影響範圍不同的操作。結果應說明實際執行哪一項，並以目標讀回及非目標指派比對支持相應範圍；指派比對本身不能證明共用定義未變。
+Assigning an existing shared constraint set and editing its definition have different scopes. State which operation occurred and support the stated scope with target readback and comparison of non-target assignments. Assignment comparisons alone do not establish that the shared definition was unchanged.
+
+差分對的存在及成員，應與訊號命名和約束指派分別核對。名稱看似成對或共用約束集，不能單獨支持差分對已建立的結論。
+Verify differential pair existence and membership separately from signal names and constraint assignments. Paired-looking names or a shared constraint set alone do not establish that a differential pair was created.
+
+對內間距與異網間距是不同的規則，即使顯示數值相同，也須保留各自的規則種類、適用範圍與單位。設定讀回只支持相應設定的狀態，佈線、連通、設計規則及電氣結果仍需各自驗證。
+Intra-pair gap and clearance to other nets are different rules. Even when displayed values match, retain each rule's type, scope and units. Configuration readback supports the corresponding configuration state; routing, connectivity, design rules and electrical results each require their own verification.
