@@ -71,3 +71,7 @@ Shape snapshots cover only the descriptors captured. They do not automatically c
 
 結果說明應清楚區分已通過、失敗與尚未驗證，並讓每項成功聲明停留在證據涵蓋的範圍內。
 Result summaries should distinguish passed, failed, and unverified items, keeping every success claim within the scope supported by evidence.
+
+動態填銅可能使幾何與物件身份呈現不同結果。身份、網路、所屬關係、層與邊界角色通過核對時，仍應明列幾何是否相同，以及比較條件是否改變。將差異標為重新填銅是一項待支持的解釋，不能單靠相同網路或層就認定變更可接受；連通、設計規則與儲存仍須各自確認。
+
+Dynamic copper fill can produce different results for geometry and object identity. When identity, net, ownership, layer and boundary role checks pass, state separately whether geometry matches and whether comparison criteria changed. Labeling a difference as repouring is an explanation requiring support. Matching net or layer alone does not establish that a change is acceptable; connectivity, design rules and saved state each need their own confirmation.
